@@ -8,20 +8,21 @@
     //     exit();
     // }
 
-    function redirect($id)
-    {
-        $_SESSION['albumID']=$id;
-        header('Location: slideshow.php');
-        echo "hello";
-    }
-
 ?>
 
 <html>
 <head>
 </head>
+<script>
+    // function hello()
+    // {
+    //    
+    // }
+</script>
 <body>
-<center style='margin-top:100px;' >
+   
+<center style='margin-top:100px;'>
+ <h3>Your Albums</h3>
 <table>
 
     <?php
@@ -34,8 +35,8 @@
             {
                 echo '<tr>';
             }
-            // echo '<img onclick="alert('.$i['id'].')" src='.$i['photos']['0']['source'].' height="100" width="100"  >';
-            echo '<td><img onclick="window.location.href='.$link.'" src='.$i['photos']['0']['source'].' height="200" width="200"><br>';
+            // echo '<td><img onclick="alert('.$i['id'].')" src='.$i['photos']['0']['source'].' height="200" width="200"  ><br>';
+            echo '<td><img onclick="" src='.$i['photos']['0']['source'].' height="200" width="200"  ><br>';
             echo '<label>'.$i['name'].'</label></td>';
             if($c%3==2)
             {
