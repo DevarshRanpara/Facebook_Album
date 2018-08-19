@@ -7,8 +7,6 @@
     //     header('Location: index.php');
     //     exit();
     // }
-    $name='dev';
-
 
 ?>
 
@@ -18,7 +16,7 @@
 <script>
     function onload()
     {
-        var x='<?php echo $_SESSION['userData']; ?>';
+        var x='<?php echo $_SESSION['josnData']; ?>';
         console.log(x);
     }
     function albumClick(x)
