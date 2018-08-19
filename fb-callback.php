@@ -1,8 +1,17 @@
 <?php
 
+    // Get configuration file 
     require_once "config.php";
 
+    // Check if access token is set or not
+    if(isset($_SESSION['accesToken']))
+    {
+        header('Location: home.php');
+        exit();
+    }
+
     try{
+        //If get access token
         $accestoken = $helper->getAccessToken();
     }
     catch(\Facebook\Exception\FacebookResponceException $e){
@@ -15,6 +24,7 @@
     }
 
     if(!$accestoken){
+        // If we can't generate access token redirect to Login
         header('Location : login.php');
         exit();
     }
@@ -28,14 +38,14 @@
     $userData = $responce->getGraphNode()->asArray();
     // echo "<pre>";
     $data=json_encode($userData);
-    echo $data;
-    var_dump($data);
+    // echo $data;
+    // var_dump($data);
 
     $_SESSION['josnData']=$data;
     $_SESSION['userData'] = $userData;
     $_SESSION['accesToken'] = (string)$accestoken;
 
-    // header('Location: home.php');
-    // exit();
+    header('Location: home.php');
+    exit();
 
 ?>

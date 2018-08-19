@@ -5,10 +5,18 @@ html, body{
 }
 body {
     height : 100vh;
-    /* background: #151519;  */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #282828;
     background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+
+.home{
+    height : 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #282828;
+    background: linear-gradient(-45deg,#C0DEED,#3B5998);
     background-size: 400% 400%;
     animation: Gradient 10s ease infinite;
 }
@@ -33,15 +41,7 @@ h1{
     padding-top: 40px;
     margin-bottom: 0;
 } 
-/* 
-h1{
-    position: absolute;
-    font-size: 60px;
-    font-weight: lighter;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-} */
+
 
 p{
     color:#000000;
@@ -117,19 +117,27 @@ button:hover:after{
     opacity: 1;
     transition: .7s;
 }
+#slide_show{
+    height: 100%; 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
 
+img{
+    border : 1px solid #000;
+    border-radius: 7px;
+    /* box-shadow: 0.5px 0.5px 0.5px #000; */
+    box-shadow: 1px 1px 1px #000;
+}
 
+/* Main */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box{
+    transition: 0.3s;
+}
+.box:hover{
+    transform:scale(1.1);
+    cursor: pointer;    
+    
+}
