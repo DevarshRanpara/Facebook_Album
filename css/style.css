@@ -1,0 +1,135 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    height : 100vh;
+    /* background: #151519;  */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #282828;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+
+ @keyframes Gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+h1{
+    font-weight: lighter;
+    font-size: 60px;
+    color:#000000;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 0;
+} 
+/* 
+h1{
+    position: absolute;
+    font-size: 60px;
+    font-weight: lighter;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+} */
+
+p{
+    color:#000000;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    padding-top: 10vp;
+}
+
+button{
+    position: absolute;
+    top :50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    background:none;
+    color : #000000;
+    width: 240px;
+    height:80px;
+    border : 1px solid #000000;
+    font-size: 18px;
+    border-radius : 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+button:focus{
+    outline: none;
+}
+
+button:before{
+    content:'';
+    display:block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left:0;
+    top:0;
+    opacity: .5s;
+    filter:blur(30px);
+    transform: translateX(-130px)skewX(-15deg);
+}
+button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100px;
+    left:30px;
+    top:0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px)scaleX(-15deg);
+}
+
+button:hover{
+    background: #3B5998;
+    cursor: pointer;
+    color :#ccc;
+}
+
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

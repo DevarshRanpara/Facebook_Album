@@ -12,14 +12,22 @@
     // }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Album Slide Show</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memorise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
 </head>
 <body>
-    <button onclick="window.location.href='<?php echo $loginURL?>'">Login With facebook</button>
+    <div class="wrapper">
+        <h1>Memorise</h1>
+        <p>The place where you live back your memoris,<br> Get your facebook photos and have fun.</p>
+        <div class="btn">
+            <button onclick="window.location.href='<?php echo $loginURL?>'" type="button">Login With Facebook</button>
+        </div>
+    </div>
 </body>
 </html>
