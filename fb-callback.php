@@ -27,14 +27,15 @@
     $responce = $FB->get('me?fields=name,email,picture.type(large),albums{id,name,photos{source}}',$accestoken);
     $userData = $responce->getGraphNode()->asArray();
     // echo "<pre>";
-    // $data=json_encode($userData);
-    // echo $data;
-    // var_dump($data);
+    $data=json_encode($userData);
+    echo $data;
+    var_dump($data);
 
+    $_SESSION['josnData']=$data;
     $_SESSION['userData'] = $userData;
     $_SESSION['accesToken'] = (string)$accestoken;
 
-    header('Location: home.php');
-    exit();
+    // header('Location: home.php');
+    // exit();
 
 ?>

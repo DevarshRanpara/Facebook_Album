@@ -7,13 +7,8 @@
     //     header('Location: index.php');
     //     exit();
     // }
+    $name='dev';
 
-    function redirect($ic)
-    {
-        $_SESSION['albumIndex']=$ic;
-        header('Location: slideshow.php');
-        exit();
-    }
 
 ?>
 
@@ -21,13 +16,17 @@
 <head>
 </head>
 <script>
-    function albumClick(ind)
+    function onload()
     {
-        x="";
-        alert(ind);
+        var x='<?php echo $_SESSION['userData']; ?>';
+        console.log(x);
+    }
+    function albumClick(x)
+    {
+        alert(x);
     }
 </script>
-<body>
+<body onload='onload()' >
    
 <center style='margin-top:100px;'>
  <h3>Your Albums</h3>
@@ -45,7 +44,7 @@
                 echo '<tr>';
             }
             // echo '<td><img onclick="alert('.$i['id'].')" src='.$i['photos']['0']['source'].' height="200" width="200"  ><br>';
-            echo '<td><img onclick="albumClick('.$ic.')" src='.$i['photos']['0']['source'].' height="200" width="200"  ><br>';
+            echo '<td><img onclick="albumClick('.$i['id'].')" src='.$i['photos']['0']['source'].' height="200" width="200"  ><br>';
             echo '<label>'.$i['name'].'</label></td>';
             if($c%3==2)
             {
