@@ -124,13 +124,6 @@ button:hover:after{
     background-repeat: no-repeat; 
 }
 
-img{
-    border : 1px solid #000;
-    border-radius: 7px;
-    /* box-shadow: 0.5px 0.5px 0.5px #000; */
-    box-shadow: 1px 1px 1px #000;
-}
-
 /* Main */
 
 .box{
@@ -140,4 +133,29 @@ img{
     transform:scale(1.1);
     cursor: pointer;    
     
+}
+.box{
+    transition: 0.3s;
+}
+.box:hover{
+    transform:scale(1.1);
+    cursor: pointer;    
+    
+}
+.thumb{
+    height: 200px;
+    width: 200px;
+    border : 1px solid #000000;
+    border-radius : 4px;
+}
+.slide{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100vh;
+    width: auto;
+}
+#slide_show{
+    background: #282828;
 }

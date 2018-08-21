@@ -13,11 +13,11 @@
     $loginURL = $helper->getLoginUrl($redirectURL,$permissions);
 
     // If user is already logged in redirect to home
-    // if(isset($_SESSION['accesToken']))
-    // {
-    //     header('Location: home.php');
-    //     exit();
-    // }
+    if(isset($_SESSION['accesToken']))
+    {
+        header('Location: home.php');
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +28,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Memorise</title>
+    <link rel="icon" href="images/icon.png" type="image" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
