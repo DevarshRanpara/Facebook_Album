@@ -30,8 +30,7 @@
     <title>Memorise</title>
     <link rel="icon" href="images/icon.png" type="image" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
 
 </head>
 

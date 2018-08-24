@@ -1,22 +1,9 @@
-html, body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+
 body {
     height : 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #282828;
     background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
-    background-size: 400% 400%;
-    animation: Gradient 10s ease infinite;
-}
-
-.home{
-    height : 100vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #282828;
-    background: linear-gradient(-45deg,#C0DEED,#3B5998);
     background-size: 400% 400%;
     animation: Gradient 10s ease infinite;
 }
@@ -69,9 +56,6 @@ button{
     transition: .6s;
     overflow: hidden;
 }
-button:focus{
-    outline: none;
-}
 
 button:before{
     content:'';
@@ -122,40 +106,4 @@ button:hover:after{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat; 
-}
-
-/* Main */
-
-.box{
-    transition: 0.3s;
-}
-.box:hover{
-    transform:scale(1.1);
-    cursor: pointer;    
-    
-}
-.box{
-    transition: 0.3s;
-}
-.box:hover{
-    transform:scale(1.1);
-    cursor: pointer;    
-    
-}
-.thumb{
-    height: 200px;
-    width: 200px;
-    border : 1px solid #000000;
-    border-radius : 4px;
-}
-.slide{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 100vh;
-    width: auto;
-}
-#slide_show{
-    background: #282828;
 }

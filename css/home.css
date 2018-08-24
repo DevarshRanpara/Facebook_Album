@@ -1,0 +1,62 @@
+
+body{
+    height : 100vh;
+    background: #282828;
+    background: linear-gradient(-45deg,#C0DEED,#3B5998);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+@keyframes Gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+.box{
+    transition: 0.3s;
+}
+.box:hover{
+    transform:scale(1.1);
+    cursor: pointer;    
+    
+}
+.box{
+    transition: 0.3s;
+    float: left;
+}
+.box:hover{
+    transform:scale(1.1);
+    cursor: pointer;    
+    
+}
+.thumb{
+    height: 200px;
+    width: 200px;
+    border : 1px solid #000000;
+    border-radius : 4px;
+}
+.slide{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100vh;
+    width: auto;
+}
+#slide_show{
+    background: #282828;
+}
+.ico{
+    height:7vh;
+    width: 7vh;
+    border-radius: 50%;
+}
+.head{
+    padding-left: 2vh;
+    color:#ccc;
+}
