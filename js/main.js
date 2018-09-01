@@ -3,9 +3,8 @@ var jsonData;
 var albumIndex;
 var images = [];
 var noOfImages;
-var time=2000;
 
-req.open('GET','fetch_data.php');
+req.open('GET','functions/fetch_data.php');
 req.onload=function(){
     jsonData=JSON.parse(req.response);
 }
@@ -42,7 +41,6 @@ function albumClick(x)
         document.getElementById('btnNext').style.display='none';
         document.getElementById('btnPrev').style.display='none';
     }
-    setTimeout(changeImg(+1),time);
 }
 var i=0;
 function changeImg(x)
@@ -65,5 +63,4 @@ function changeImg(x)
     }
     console.log("Image Index : "+i);
     document.getElementById('slide').src=images[i];
-    setTimeout(changeImg(+1),time);
 }

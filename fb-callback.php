@@ -39,7 +39,7 @@
     // echo "<pre>";
     $data=json_encode($userData);
     // echo $data;
-    // var_dump($data);
+    // var_dump($userData);
 
     $_SESSION['josnData']=$data;
     $_SESSION['userData'] = $userData;
