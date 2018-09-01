@@ -15,12 +15,12 @@ It is a great app to see your all facebook albums at one place.
 ```
 $FB = new \Facebook\Facebook([
         'app_id' => '{Your facebook App id}',                         // Facebook App ID
-        'app_secret' => '{Your facebook App Secret key}',     // Facebook App Secret key
+        'app_secret' => '{Your facebook App Secret key}',             // Facebook App Secret key
         'default_graph_version' => 'v3.1'
     ]);
 ```
 
 ## Acknowledgments
 
-* This project was created for rtCamp web-engineer assignment
+* This project was created for rtCamp web-engineer [assignment](https://careers.rtcamp.com/web-engineer/assignments/)
 
