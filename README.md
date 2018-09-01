@@ -20,10 +20,6 @@ $FB = new \Facebook\Facebook([
     ]);
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 * This project was created for rtCamp web-engineer assignment
