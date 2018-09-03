@@ -8,6 +8,13 @@
         exit();
     }
 
+    if(isset($_POST['logout']))
+    {
+        session_destroy();
+        header('Location: index.php');
+        exit();
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +32,11 @@
     </head>
 
     <body onload='onload()' class="home" >
+
         <div id="album_list">
+
+        <form method='POST' action='home.php' >
+
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <ul class="navbar-nav " >
                 <li class="nav-item"> 
@@ -35,7 +46,7 @@
                     <h5 class="head" > Hi, <?php echo $_SESSION['userData']['name'] ;?> <br>Your Memories...!</h5> 
                 </li>
                 <li class="nav-item">
-                    <button class="btn" >Download All</button>
+                    <button class="btn" onclick="window.location.href='functions/download.php'" >Download All</button>
                 </li>
                 <li class="nav-item">
                     <button class="btn" >Download Selected</button>
@@ -47,9 +58,12 @@
                     <button class="btn" >Move selected to Google Drive</button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-danger" >Logout</button>
+                    <button class="btn btn-danger" name='logout' >Logout</button>
                 </li>
             </ul>
+            
+            </form>
+        
         </nav>
             <center style='padding-top:50px;'>
                 

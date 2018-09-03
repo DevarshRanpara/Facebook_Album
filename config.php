@@ -5,6 +5,7 @@
 
     // Start session 
     session_start();
+    
 
     // Add Facebook Library
     require_once "lib/Facebook/autoload.php";
